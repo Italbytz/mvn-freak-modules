@@ -54,7 +54,6 @@ public abstract class AbstractMultiObjectiveRobustRegressionFitness extends Abst
 	/**
 	 * Checks whether the vector a is dominated by the vector b or vice versa.
 	 * 
-	 * +1 = a > b, 0 = a==b, -1 = a < b, -2 uncomparable
 	 * @param a the first fitness vector.
 	 * @param b the second fitness vector.
 	 * @return +1 if a dominates b, 0 if a=b, -1 if b dominates a, UNCOMPARABLE in all other cases.

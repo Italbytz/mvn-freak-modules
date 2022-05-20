@@ -26,7 +26,7 @@ import freak.module.searchspace.*;
  * 3. PWT(x) = 2n if x lies in T <br>
  * 4. PWT(x) = n - ONEMAX(x) otherwise <br>
  * T is the trap which contains local optimal search points. x lies in T if
- * n/4 <= ONEMAX(x) <= 3n/4 and if a point on the path 1^i0^{n-i} exists which
+ * n/4 less equal ONEMAX(x) less equal 3n/4 and if a point on the path 1^i0^{n-i} exists which
  * has a distance to x which lies in the interval [n/12,n/6]. Furthermore the
  * distance of x to every path point must be at least n/24. <br>
  * This function demonstrates that the dynamic (1+1)EA can get trapped.

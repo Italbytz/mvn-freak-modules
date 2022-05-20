@@ -126,7 +126,6 @@ public class Cycle extends AbstractSearchSpace implements Configurable, HasMetri
 	/**
 	 * Returns the dimension of the seach space.
 	 * @return  the dimension of the search space.
-	 * @uml.property  name="dimension"
 	 */
 	public int getDimension() {
 		return dimension;

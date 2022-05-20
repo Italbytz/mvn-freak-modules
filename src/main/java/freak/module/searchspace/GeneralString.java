@@ -87,7 +87,6 @@ public class GeneralString extends AbstractSearchSpace implements Configurable, 
 	
 	/**
 	 * returns numChars
-	 * @uml.property  name="numChars"
 	 */
 	public int getNumChars() {
 		return numChars;
@@ -131,7 +130,6 @@ public class GeneralString extends AbstractSearchSpace implements Configurable, 
 	/**
 	 * Returns the dimension of the seach space.
 	 * @return  the dimension of the search space.
-	 * @uml.property  name="dimension"
 	 */
 	public int getDimension() {
 		return dimension;

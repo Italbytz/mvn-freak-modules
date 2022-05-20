@@ -34,7 +34,7 @@ public class LtSParetoQuantileOptimization extends AbstractAdjustableStaticMulti
 	/**
 	 * This method must be overriden by subclasses. It must determine the
 	 * fitness value of the given individual independently from the its age.
-	 * @param individual the individual whose fitness is to be evaluated.
+	 * @param genotype the individual whose fitness is to be evaluated.
 	 * @return the fitness value of the given individual.
 	 */
 	protected double[] evaluate(Genotype genotype) {

@@ -104,7 +104,6 @@ public class BitString extends AbstractSearchSpace implements Configurable, HasM
 	/**
 	 * Returns the dimension of the seach space.
 	 * @return  the dimension of the search space.
-	 * @uml.property  name="dimension"
 	 */
 	public int getDimension() {
 		return dimension;

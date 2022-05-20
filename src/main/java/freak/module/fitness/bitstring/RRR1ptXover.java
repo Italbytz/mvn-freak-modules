@@ -22,7 +22,7 @@ import freak.module.searchspace.*;
  * Functions - Functions Where Crossover Provably is Essential". <br>
  * The fitness of the bitstring x in {0,1}^n is defined as follows: <br>
  * 1. RRR(x) = 2n^2 if x = 1^n <br>
- * 2. RRR(x) = n*OneMax(x)+b(x) if OneMax(x) <= n-m <br>
+ * 2. RRR(x) = n*OneMax(x)+b(x) if OneMax(x) less equal n-m <br>
  * 3. RRR(x) = 0 otherwise <br>
  * b(x) is the length of the longest block consisting of ones only.
  * 

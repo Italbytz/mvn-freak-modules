@@ -25,7 +25,7 @@ import freak.module.searchspace.*;
  * 2. PTJ(x) = 3n if x lies in I <br>
  * 3. PTJ(x) = n - ONEMAX(x) otherwise <br>
  * I is an island which contains the optimal search points. x lies in I if
- * 3n/4 <= ONEMAX(x) <= 7n/8 and the distance of x to every point on the path
+ * 3n/4 less equal ONEMAX(x) less equal 7n/8 and the distance of x to every point on the path
  * 1^i0^{n-i} is at least n/16. <br>
  * This function demonstrates that the dynamic (1+1)EA can outperform each
  * static (1+1) EA drastically.      

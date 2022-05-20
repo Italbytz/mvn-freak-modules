@@ -19,7 +19,7 @@ import freak.module.searchspace.*;
 /**
  * This class implements the fitness function H-IFF. <br>
  *
- * It searches in a Bit string of length 2^k all blocks of size 2^i, 0<=i<=k. If
+ * It searches in a Bit string of length 2^k all blocks of size 2^i, i between 0 and k. If
  * all bits within such a block 2^i are equal (set or unset) 2^i is added to the
  * fitness value. But the blocks has also to start at positions 2^j, for a j in 
  * the natural numbers.<br>

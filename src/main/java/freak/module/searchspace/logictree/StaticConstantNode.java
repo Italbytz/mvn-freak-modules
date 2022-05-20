@@ -21,7 +21,7 @@ public class StaticConstantNode implements AtomicNode, Serializable{
 
 	/**
 	 * Creates a new constantNode with Value value.
-	 * @value value Value to be set
+	 * @param value Value to be set
 	 */
 	public StaticConstantNode(int value){
 //		 * If value is not greater than zero, a random constant in 1..3 will be set.
@@ -34,7 +34,6 @@ public class StaticConstantNode implements AtomicNode, Serializable{
 	
 	/**
 	 * Returns the constant value of this node.
-	 * @uml.property  name="value"
 	 */
 	public byte getValue(){
 		return value;

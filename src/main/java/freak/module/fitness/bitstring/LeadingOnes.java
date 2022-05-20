@@ -21,12 +21,7 @@ import freak.module.searchspace.*;
  * 
  * The fitness value of a given individual is the position of the first null
  * minus 1
- * 
- * Example: <br> 
- * 
- * 0111010 ==> f=0 <br>
- * 1110010 ==> f=3
- * 
+ *
  *  @author Christian, Heiko
  */
 public class LeadingOnes extends AbstractStaticSingleObjectiveFitnessFunction {

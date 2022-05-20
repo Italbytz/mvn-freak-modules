@@ -102,7 +102,6 @@ public class Permutation extends AbstractSearchSpace implements Configurable, Ha
 	/**
 	 * Returns the dimension of the seach space.
 	 * @return  the dimension of the search space.
-	 * @uml.property  name="dimension"
 	 */
 	public int getDimension() {
 		return dimension;
