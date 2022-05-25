@@ -106,7 +106,6 @@ public class LTSMutation extends Mutation implements CompatibleWithDifferentSear
 
 	@Override
 	public void testSchedule(ScheduleInterface schedule) throws UnsupportedEnvironmentException {
-		// TODO Auto-generated method stub
 		super.testSchedule(schedule);
 		if (!((schedule.getRealFitnessFunction() instanceof AbstractRobustRegressionFitness) 
 				&& (schedule.getGenotypeSearchSpace() instanceof BitString))) {
@@ -116,7 +115,6 @@ public class LTSMutation extends Mutation implements CompatibleWithDifferentSear
 	}
 	
 	public String getDescription() {
-		// TODO Auto-generated method stub
 		return "Mutation designed for LtSOptimization";
 	}
 
