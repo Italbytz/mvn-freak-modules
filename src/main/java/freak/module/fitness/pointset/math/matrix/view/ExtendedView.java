@@ -7,11 +7,13 @@ package freak.module.fitness.pointset.math.matrix.view;
 
 import freak.module.fitness.pointset.math.matrix.Matrix;
 
+import java.io.Serializable;
+
 /**
  * @author Basti LT
  *
  */
-public class ExtendedView {
+public class ExtendedView implements Serializable {
 	protected SimpleView view;
 	
 	public ExtendedView(SimpleView pView) {
