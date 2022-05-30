@@ -13,11 +13,13 @@ import freak.module.fitness.pointset.math.matrix.view.RowView;
 import freak.module.fitness.pointset.math.matrix.view.TransposeView;
 import freak.module.fitness.pointset.math.matrix.view.VectorView;
 
+import java.io.Serializable;
+
 /**
  * @author Basti LT
  *
  */
-public class Matrix {
+public class Matrix implements Serializable {
 	
 	public double m[]; 
 	

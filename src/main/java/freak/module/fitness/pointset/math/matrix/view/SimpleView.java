@@ -7,12 +7,14 @@ package freak.module.fitness.pointset.math.matrix.view;
 
 import freak.module.fitness.pointset.math.matrix.Matrix;
 
+import java.io.Serializable;
+
 
 /**
  * @author Basti LT
  *
  */
-abstract public class SimpleView {
+abstract public class SimpleView implements Serializable {
 	Matrix m_kMat;
 	
 	abstract public int getCol();

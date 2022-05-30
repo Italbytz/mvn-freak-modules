@@ -14,7 +14,7 @@ import java.io.Serializable;
  * @author Basti LT
  *
  */
-public class VectorView extends ExtendedView implements Serializable {
+public class VectorView extends ExtendedView {
 	
 	public VectorView(Vector pVec) {
 		super(new NormalView(pVec));
