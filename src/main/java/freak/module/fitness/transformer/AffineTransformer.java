@@ -33,7 +33,7 @@ public class AffineTransformer extends AbstractSingleObjectiveFitnessFunction im
 	private double b = 0;
 
 	/**
-	 * The constructor of <coed>AffineTransformer</code>.
+	 * The constructor of <code>AffineTransformer</code>.
 	 * 
 	 * @param schedule a back-link to the currently used schedule.
 	 */
@@ -105,7 +105,7 @@ public class AffineTransformer extends AbstractSingleObjectiveFitnessFunction im
 	/**
 	 * Sets the value of attribute <code>b</code>.
 	 * 
-	 * @param a the wrapped value attribute <code>b</code> should be set to.
+	 * @param b the wrapped value attribute <code>b</code> should be set to.
 	 */
 	public void setPropertyB(Double b) {
 		this.b = b.doubleValue();

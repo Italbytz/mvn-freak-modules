@@ -17,9 +17,9 @@ import freak.module.searchspace.PermutationGenotype;
 
 /**
  * The sorting problem can be viewed as an optimization problem: the sortedness
- * of a sequence has to be maximized. We assume a_1 < a_2 < ... < a_n, so the
+ * of a sequence has to be maximized. We assume a_1 less than a_2 less than ... less than a_n, so the
  * optimal permutation is the identity. <br>
- * INV(pi) measures the number of pairs (i,j), such that pi(i) < pi(j) (pairs in
+ * INV(pi) measures the number of pairs (i,j), such that pi(i) less than pi(j) (pairs in
  * correct order)
  * 
  * @author Heiko

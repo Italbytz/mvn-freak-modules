@@ -28,7 +28,6 @@ public class TSPFile implements Serializable {
 	
 	/**
 	 * @return  the dimension
-	 * @uml.property  name="dimension"
 	 */
 	public int getDimension() {
 		return dimension;
@@ -40,7 +39,6 @@ public class TSPFile implements Serializable {
 	
 	/**
 	 * @return  the comment
-	 * @uml.property  name="comment"
 	 */
 	public String getComment() {
 		return comment;
@@ -48,7 +46,6 @@ public class TSPFile implements Serializable {
 	
 	/**
 	 * @return  the name
-	 * @uml.property  name="name"
 	 */
 	public String getName() {
 		return name;
@@ -56,7 +53,6 @@ public class TSPFile implements Serializable {
 	
 	/**
 	 * @return  the points
-	 * @uml.property  name="points"
 	 */
 	public double[][] getPoints() {
 		return points;
@@ -64,7 +60,6 @@ public class TSPFile implements Serializable {
 	
 	/**
 	 * @return  the borderRectangle
-	 * @uml.property  name="borderRectangle"
 	 */
 	public double[] getBorderRectangle() {
 		return borderRectangle;

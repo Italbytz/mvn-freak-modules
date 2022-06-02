@@ -17,7 +17,7 @@ import freak.module.searchspace.PermutationGenotype;
 
 /**
  * The sorting problem can be viewed as an optimization problem: the sortedness
- * of a sequence has to be maximized. We assume a_1 < a_2 < ... < a_n, so the
+ * of a sequence has to be maximized. We assume a_1 less than a_2 less than ... less than a_n, so the
  * optimal permutation is the identity. <br>
  * EXC(pi) equals the minimal number of exchanges to sort the sequence.
  * 

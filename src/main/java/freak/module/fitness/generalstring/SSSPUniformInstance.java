@@ -41,7 +41,6 @@ public class SSSPUniformInstance extends SSSPInstance {
 	
 	/**
 	 * @param maxDistance  the maxDistance to set
-	 * @uml.property  name="maxDistance"
 	 */
 	public void setMaxDistance(int maxDistance) {
 		this.maxDistance = maxDistance;

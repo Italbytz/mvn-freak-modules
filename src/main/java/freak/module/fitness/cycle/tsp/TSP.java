@@ -68,7 +68,6 @@ public class TSP extends AbstractStaticSingleObjectiveFitnessFunction implements
 	
 	/**
 	 * @return  the points
-	 * @uml.property  name="points"
 	 */
 	public synchronized double[][] getPoints() {
 		return points;
@@ -76,7 +75,6 @@ public class TSP extends AbstractStaticSingleObjectiveFitnessFunction implements
 	
 	/**
 	 * @return  the borderRectangle
-	 * @uml.property  name="borderRectangle"
 	 */
 	public synchronized double[] getBorderRectangle() {
 		return borderRectangle;
