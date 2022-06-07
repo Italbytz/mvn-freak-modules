@@ -3,22 +3,24 @@
   <handler>
     <String>freak.core.modulesupport.PersistenceManager$StringPersistenceHandler</String>
     <Property>freak.core.modulesupport.Configuration$PropertyWrapperPersistenceHandler</Property>
+    <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
+    <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
+    <Edge>freak.module.support.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
+    <OperatorGraphFile>freak.module.support.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
     <Map>freak.core.modulesupport.PersistenceManager$MapPersistenceHandler</Map>
     <Double>freak.core.modulesupport.PersistenceManager$DoublePersistenceHandler</Double>
-    <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
+    <Node>freak.module.support.OperatorGraphFile$Node$NodePersistenceHandler</Node>
     <Boolean>freak.core.modulesupport.PersistenceManager$BooleanPersistenceHandler</Boolean>
-    <Node>freak.gui.graph.OperatorGraphFile$Node$NodePersistenceHandler</Node>
-    <Edge>freak.gui.graph.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
-    <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
     <Configuration>freak.core.modulesupport.Configuration$ConfigurationPersistenceHandler</Configuration>
-    <OperatorGraphFile>freak.gui.graph.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
-    <Rectangle>freak.core.modulesupport.PersistenceManager$RectanglePersistenceHandler</Rectangle>
     <BevelBorder>freak.core.modulesupport.PersistenceManager$BevelBorderPersistenceHandler</BevelBorder>
+    <Rectangle>freak.core.modulesupport.PersistenceManager$RectanglePersistenceHandler</Rectangle>
   </handler>
   <OperatorGraphFile>
     <List type="java.util.ArrayList">
       <Edge source="0" sourcePort="0" target="2" targetPort="0" />
-      <Edge source="2" sourcePort="0" target="1" targetPort="0" />
+      <Edge source="2" sourcePort="0" target="3" targetPort="0" />
+      <Edge source="0" sourcePort="0" target="3" targetPort="1" />
+      <Edge source="3" sourcePort="0" target="1" targetPort="0" />
     </List>
     <List type="java.util.ArrayList">
       <Node>
@@ -28,9 +30,9 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="20" width="100" x="84" y="11" />
+          <Rectangle height="20" width="100" x="40" y="10" />
           <String>opaque</String>
-          <Boolean id="10">true</Boolean>
+          <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -51,9 +53,9 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="20" width="100" x="84" y="257" />
+          <Rectangle height="20" width="100" x="40" y="250" />
           <String>opaque</String>
-          <ref id="10" />
+          <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -74,29 +76,56 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="24" width="188" x="41" y="98" />
+          <Rectangle height="26" width="82" x="11" y="90" />
           <String>opaque</String>
           <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
-            <String>MutationProb</String>
-            <Property description="Mutation probability">
-              <Double>9.765625E-4</Double>
+            <String>ProbDelAnd</String>
+            <Property description="ProbDelAnd">
+              <Double>0.75</Double>
             </Property>
-            <String>StandardMutationProb</String>
-            <Property description="Set mutation prob. to 1/n">
-              <Boolean>true</Boolean>
+            <String>ProbInsAnd</String>
+            <Property description="ProbInsAnd">
+              <Double>0.15</Double>
             </Property>
             <String>Name</String>
             <Property description="Name">
-              <String>Optimized Ising Cliques (1+1)EA</String>
+              <String>TreeMutation</String>
+            </Property>
+            <String>ProbIns</String>
+            <Property description="ProbIns">
+              <Double>0.5</Double>
             </Property>
           </Map>
           <null />
         </Configuration>
         <List type="java.util.ArrayList" />
-        <String>freak.module.operator.mutation.generalstring.OptimizedCliqueEA</String>
+        <String>freak.module.operator.treemutation.booleanfunction.TreeMutation</String>
+      </Node>
+      <Node>
+        <Map type="java.util.Hashtable">
+          <String>backgroundColor</String>
+          <Color red="255" green="220" blue="168" />
+          <String>border</String>
+          <BevelBorder bevelType="0" />
+          <String>bounds</String>
+          <Rectangle height="26" width="127" x="51" y="157" />
+          <String>opaque</String>
+          <Boolean>true</Boolean>
+        </Map>
+        <Configuration descriptionOfAdditional="">
+          <Map type="java.util.HashMap">
+            <String>Name</String>
+            <Property description="Name">
+              <String>Domination Selection</String>
+            </Property>
+          </Map>
+          <null />
+        </Configuration>
+        <List type="java.util.ArrayList" />
+        <String>freak.module.operator.selection.DominationSelection</String>
       </Node>
     </List>
     <List type="java.util.ArrayList" />

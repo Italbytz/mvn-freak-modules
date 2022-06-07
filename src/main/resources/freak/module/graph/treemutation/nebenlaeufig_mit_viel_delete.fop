@@ -98,7 +98,7 @@ ACpmcmVhay5ndWkuZ3JhcGguT3BlcmF0b3JHcmFwaEZpbGUkUFdyYXBwZXLDJCYFYg565gIAA0kA
 CG9wZXJhdG9yTAAIcHJvcE5hbWVxAH4AHEwABHR5cGVxAH4AHHhwAAAAAnQAF05vT2ZJbmRpdmlk
 dWFsc1RvU2VsZWN0dAARamF2YS5sYW5nLkludGVnZXJ4dAAjZnJlYWsubW9kdWxlLnBhcmFtZXRl
 cmNvbnRyb2xsZXIuTXV4]]>
-    <!--class=freak.gui.graph.OperatorGraphFile-->
+    <!--class=freak.module.support.OperatorGraphFile-->
   </object>
 </FreakPersistence>
 

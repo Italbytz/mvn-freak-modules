@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<freak.gui.graph.OperatorGraphFile>
+<freak.module.support.OperatorGraphFile>
   <handler>
     <String>freak.core.modulesupport.PersistenceManager$StringPersistenceHandler</String>
     <Integer>freak.core.modulesupport.PersistenceManager$IntegerPersistenceHandler</Integer>
@@ -7,20 +7,20 @@
     <Map>freak.core.modulesupport.PersistenceManager$MapPersistenceHandler</Map>
     <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
     <Boolean>freak.core.modulesupport.PersistenceManager$BooleanPersistenceHandler</Boolean>
-    <Node>freak.gui.graph.OperatorGraphFile$Node$NodePersistenceHandler</Node>
-    <Edge>freak.gui.graph.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
+    <Node>freak.module.support.OperatorGraphFile$Node$NodePersistenceHandler</Node>
+    <Edge>freak.module.support.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
     <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
     <Configuration>freak.core.modulesupport.Configuration$ConfigurationPersistenceHandler</Configuration>
-    <OperatorGraphFile>freak.gui.graph.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
+    <OperatorGraphFile>freak.module.support.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
     <Rectangle>freak.core.modulesupport.PersistenceManager$RectanglePersistenceHandler</Rectangle>
     <BevelBorder>freak.core.modulesupport.PersistenceManager$BevelBorderPersistenceHandler</BevelBorder>
   </handler>
   <OperatorGraphFile>
     <List type="java.util.ArrayList">
-      <Edge source="2" sourcePort="0" target="1" targetPort="0" />
-      <Edge source="3" sourcePort="0" target="4" targetPort="0" />
       <Edge source="0" sourcePort="0" target="2" targetPort="0" />
       <Edge source="0" sourcePort="0" target="3" targetPort="0" />
+      <Edge source="2" sourcePort="0" target="1" targetPort="0" />
+      <Edge source="3" sourcePort="0" target="4" targetPort="0" />
       <Edge source="4" sourcePort="0" target="2" targetPort="1" />
     </List>
     <List type="java.util.ArrayList">
@@ -100,21 +100,25 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="24" width="85" x="243" y="69" />
+          <Rectangle height="24" width="108" x="239" y="76" />
           <String>opaque</String>
           <ref id="13" />
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
+            <String>NoOfIndividualsToSelect</String>
+            <Property description="Selected individuals">
+              <Integer>1</Integer>
+            </Property>
             <String>Name</String>
             <Property description="Name">
-              <String>Fair Selection</String>
+              <String>Uniform Selection</String>
             </Property>
           </Map>
           <null />
         </Configuration>
         <List type="java.util.ArrayList" />
-        <String>freak.module.operator.selection.FairSelection</String>
+        <String>freak.module.operator.selection.UniformSelection</String>
       </Node>
       <Node>
         <Map type="java.util.Hashtable">
@@ -123,9 +127,9 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="24" width="83" x="232" y="134" />
+          <Rectangle height="24" width="83" x="248" y="127" />
           <String>opaque</String>
-          <ref id="13" />
+          <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -146,5 +150,5 @@
     </List>
     <List type="java.util.ArrayList" />
   </OperatorGraphFile>
-</freak.gui.graph.OperatorGraphFile>
+</freak.module.support.OperatorGraphFile>
 

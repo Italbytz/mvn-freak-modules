@@ -5,11 +5,11 @@
     <Property>freak.core.modulesupport.Configuration$PropertyWrapperPersistenceHandler</Property>
     <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
     <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
-    <Edge>freak.gui.graph.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
-    <OperatorGraphFile>freak.gui.graph.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
+    <Edge>freak.module.support.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
+    <OperatorGraphFile>freak.module.support.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
     <Map>freak.core.modulesupport.PersistenceManager$MapPersistenceHandler</Map>
     <Integer>freak.core.modulesupport.PersistenceManager$IntegerPersistenceHandler</Integer>
-    <Node>freak.gui.graph.OperatorGraphFile$Node$NodePersistenceHandler</Node>
+    <Node>freak.module.support.OperatorGraphFile$Node$NodePersistenceHandler</Node>
     <Boolean>freak.core.modulesupport.PersistenceManager$BooleanPersistenceHandler</Boolean>
     <Configuration>freak.core.modulesupport.Configuration$ConfigurationPersistenceHandler</Configuration>
     <BevelBorder>freak.core.modulesupport.PersistenceManager$BevelBorderPersistenceHandler</BevelBorder>

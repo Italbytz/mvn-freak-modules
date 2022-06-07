@@ -3,27 +3,23 @@
   <handler>
     <String>freak.core.modulesupport.PersistenceManager$StringPersistenceHandler</String>
     <Property>freak.core.modulesupport.Configuration$PropertyWrapperPersistenceHandler</Property>
-    <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
-    <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
-    <Edge>freak.gui.graph.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
-    <OperatorGraphFile>freak.gui.graph.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
-    <ParameterController>freak.gui.graph.OperatorGraphFile$PController$PControllerPersistenceHandler</ParameterController>
     <Map>freak.core.modulesupport.PersistenceManager$MapPersistenceHandler</Map>
-    <Integer>freak.core.modulesupport.PersistenceManager$IntegerPersistenceHandler</Integer>
-    <Double>freak.core.modulesupport.PersistenceManager$DoublePersistenceHandler</Double>
-    <Node>freak.gui.graph.OperatorGraphFile$Node$NodePersistenceHandler</Node>
+    <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
     <Boolean>freak.core.modulesupport.PersistenceManager$BooleanPersistenceHandler</Boolean>
+    <Node>freak.module.support.OperatorGraphFile$Node$NodePersistenceHandler</Node>
+    <Edge>freak.module.support.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
+    <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
     <Configuration>freak.core.modulesupport.Configuration$ConfigurationPersistenceHandler</Configuration>
-    <Parameter>freak.gui.graph.OperatorGraphFile$PWrapper$PWrapperPersistenceHandler</Parameter>
-    <BevelBorder>freak.core.modulesupport.PersistenceManager$BevelBorderPersistenceHandler</BevelBorder>
+    <OperatorGraphFile>freak.module.support.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
     <Rectangle>freak.core.modulesupport.PersistenceManager$RectanglePersistenceHandler</Rectangle>
+    <BevelBorder>freak.core.modulesupport.PersistenceManager$BevelBorderPersistenceHandler</BevelBorder>
   </handler>
   <OperatorGraphFile>
     <List type="java.util.ArrayList">
       <Edge source="2" sourcePort="0" target="1" targetPort="0" />
-      <Edge source="0" sourcePort="0" target="2" targetPort="0" />
       <Edge source="0" sourcePort="0" target="3" targetPort="0" />
       <Edge source="3" sourcePort="0" target="2" targetPort="0" />
+      <Edge source="0" sourcePort="0" target="2" targetPort="0" />
     </List>
     <List type="java.util.ArrayList">
       <Node>
@@ -33,9 +29,9 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="20" width="100" x="107" y="12" />
+          <Rectangle height="20" width="100" x="40" y="10" />
           <String>opaque</String>
-          <Boolean id="12">true</Boolean>
+          <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -56,9 +52,9 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="20" width="100" x="105" y="284" />
+          <Rectangle height="20" width="100" x="40" y="250" />
           <String>opaque</String>
-          <ref id="12" />
+          <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -79,25 +75,21 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="24" width="83" x="111" y="208" />
+          <Rectangle height="24" width="96" x="55" y="174" />
           <String>opaque</String>
-          <ref id="12" />
+          <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
-            <String>NoOfIndividualsToSelect</String>
-            <Property description="Selected individuals">
-              <Integer>1</Integer>
-            </Property>
             <String>Name</String>
             <Property description="Name">
-              <String>Cut Selection</String>
+              <String>SSSP Selection</String>
             </Property>
           </Map>
           <null />
         </Configuration>
         <List type="java.util.ArrayList" />
-        <String>freak.module.operator.selection.CutSelection</String>
+        <String>freak.module.operator.selection.SSSPSelection</String>
       </Node>
       <Node>
         <Map type="java.util.Hashtable">
@@ -106,37 +98,24 @@
           <String>border</String>
           <BevelBorder bevelType="0" />
           <String>bounds</String>
-          <Rectangle height="24" width="78" x="29" y="110" />
+          <Rectangle height="24" width="130" x="133" y="90" />
           <String>opaque</String>
           <Boolean>true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
-            <String>PercentMovement</String>
-            <Property description="PercentMovement">
-              <Double>20.0</Double>
-            </Property>
             <String>Name</String>
             <Property description="Name">
-              <String>LTSMutation</String>
+              <String>SSSP Global Mutation</String>
             </Property>
           </Map>
           <null />
         </Configuration>
         <List type="java.util.ArrayList" />
-        <String>freak.module.operator.mutation.common.LTSMutation</String>
+        <String>freak.module.operator.mutation.generalstring.SSSPGlobalMutation</String>
       </Node>
     </List>
-    <List type="java.util.ArrayList">
-      <ParameterController type="freak.module.parametercontroller.Mu">
-        <null />
-        <Map type="java.util.HashMap">
-          <String>Mu</String>
-          <Parameter type="java.lang.Integer" operator="2" name="NoOfIndividualsToSelect" />
-        </Map>
-        <List type="java.util.ArrayList" />
-      </ParameterController>
-    </List>
+    <List type="java.util.ArrayList" />
   </OperatorGraphFile>
 </FreakPersistence>
 

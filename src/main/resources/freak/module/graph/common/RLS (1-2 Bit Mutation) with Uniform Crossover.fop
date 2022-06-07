@@ -5,29 +5,33 @@
     <Property>freak.core.modulesupport.Configuration$PropertyWrapperPersistenceHandler</Property>
     <Color>freak.core.modulesupport.PersistenceManager$ColorPersistenceHandler</Color>
     <List>freak.core.modulesupport.PersistenceManager$ListPersistenceHandler</List>
-    <Edge>freak.gui.graph.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
-    <OperatorGraphFile>freak.gui.graph.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
-    <ParameterController>freak.gui.graph.OperatorGraphFile$PController$PControllerPersistenceHandler</ParameterController>
+    <Edge>freak.module.support.OperatorGraphFile$Edge$EdgePersistenceHandler</Edge>
+    <OperatorGraphFile>freak.module.support.OperatorGraphFile$OperatorGraphFilePersistenceHandler</OperatorGraphFile>
+    <ParameterController>freak.module.support.OperatorGraphFile$PController$PControllerPersistenceHandler</ParameterController>
     <Map>freak.core.modulesupport.PersistenceManager$MapPersistenceHandler</Map>
     <Integer>freak.core.modulesupport.PersistenceManager$IntegerPersistenceHandler</Integer>
     <Double>freak.core.modulesupport.PersistenceManager$DoublePersistenceHandler</Double>
     <Array>freak.core.modulesupport.PersistenceManager$ArrayPersistenceHandler</Array>
-    <Node>freak.gui.graph.OperatorGraphFile$Node$NodePersistenceHandler</Node>
+    <Node>freak.module.support.OperatorGraphFile$Node$NodePersistenceHandler</Node>
     <Boolean>freak.core.modulesupport.PersistenceManager$BooleanPersistenceHandler</Boolean>
     <Configuration>freak.core.modulesupport.Configuration$ConfigurationPersistenceHandler</Configuration>
-    <Parameter>freak.gui.graph.OperatorGraphFile$PWrapper$PWrapperPersistenceHandler</Parameter>
+    <Parameter>freak.module.support.OperatorGraphFile$PWrapper$PWrapperPersistenceHandler</Parameter>
     <BevelBorder>freak.core.modulesupport.PersistenceManager$BevelBorderPersistenceHandler</BevelBorder>
     <Rectangle>freak.core.modulesupport.PersistenceManager$RectanglePersistenceHandler</Rectangle>
   </handler>
   <OperatorGraphFile>
     <List type="java.util.ArrayList">
-      <Edge source="2" sourcePort="0" target="5" targetPort="0" />
-      <Edge source="5" sourcePort="0" target="1" targetPort="0" />
-      <Edge source="4" sourcePort="0" target="2" targetPort="0" />
-      <Edge source="4" sourcePort="1" target="3" targetPort="0" />
-      <Edge source="3" sourcePort="0" target="5" targetPort="0" />
       <Edge source="0" sourcePort="0" target="4" targetPort="0" />
       <Edge source="0" sourcePort="0" target="5" targetPort="0" />
+      <Edge source="0" sourcePort="0" target="6" targetPort="0" />
+      <Edge source="7" sourcePort="0" target="5" targetPort="0" />
+      <Edge source="3" sourcePort="0" target="5" targetPort="0" />
+      <Edge source="5" sourcePort="0" target="1" targetPort="0" />
+      <Edge source="6" sourcePort="1" target="7" targetPort="1" />
+      <Edge source="6" sourcePort="0" target="7" targetPort="0" />
+      <Edge source="4" sourcePort="0" target="2" targetPort="0" />
+      <Edge source="4" sourcePort="1" target="3" targetPort="0" />
+      <Edge source="2" sourcePort="0" target="5" targetPort="0" />
     </List>
     <List type="java.util.ArrayList">
       <Node>
@@ -39,7 +43,7 @@
           <String>bounds</String>
           <Rectangle height="20" width="100" x="84" y="12" />
           <String>opaque</String>
-          <Boolean id="15">true</Boolean>
+          <Boolean id="19">true</Boolean>
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -62,7 +66,7 @@
           <String>bounds</String>
           <Rectangle height="20" width="100" x="84" y="295" />
           <String>opaque</String>
-          <ref id="15" />
+          <ref id="19" />
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -85,7 +89,7 @@
           <String>bounds</String>
           <Rectangle height="24" width="83" x="146" y="135" />
           <String>opaque</String>
-          <ref id="15" />
+          <ref id="19" />
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -112,7 +116,7 @@
           <String>bounds</String>
           <Rectangle height="24" width="83" x="246" y="135" />
           <String>opaque</String>
-          <ref id="15" />
+          <ref id="19" />
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -139,7 +143,7 @@
           <String>bounds</String>
           <Rectangle height="24" width="100" x="195" y="62" />
           <String>opaque</String>
-          <ref id="15" />
+          <ref id="19" />
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -173,7 +177,7 @@
           <String>bounds</String>
           <Rectangle height="24" width="83" x="93" y="224" />
           <String>opaque</String>
-          <ref id="15" />
+          <ref id="19" />
         </Map>
         <Configuration descriptionOfAdditional="">
           <Map type="java.util.HashMap">
@@ -190,6 +194,56 @@
         </Configuration>
         <List type="java.util.ArrayList" />
         <String>freak.module.operator.selection.CutSelection</String>
+      </Node>
+      <Node>
+        <Map type="java.util.Hashtable">
+          <String>backgroundColor</String>
+          <Color red="255" green="255" blue="192" />
+          <String>border</String>
+          <BevelBorder bevelType="0" />
+          <String>bounds</String>
+          <Rectangle height="24" width="106" x="20" y="91" />
+          <String>opaque</String>
+          <ref id="19" />
+        </Map>
+        <Configuration descriptionOfAdditional="">
+          <Map type="java.util.HashMap">
+            <String>Name</String>
+            <Property description="Name">
+              <String>Random Partition</String>
+            </Property>
+            <String>Exact</String>
+            <Property description="Exact">
+              <Boolean>true</Boolean>
+            </Property>
+          </Map>
+          <null />
+        </Configuration>
+        <List type="java.util.ArrayList" />
+        <String>freak.module.operator.split.RandomPartition</String>
+      </Node>
+      <Node>
+        <Map type="java.util.Hashtable">
+          <String>backgroundColor</String>
+          <Color red="192" green="255" blue="192" />
+          <String>border</String>
+          <BevelBorder bevelType="0" />
+          <String>bounds</String>
+          <Rectangle height="24" width="114" x="7" y="153" />
+          <String>opaque</String>
+          <ref id="19" />
+        </Map>
+        <Configuration descriptionOfAdditional="">
+          <Map type="java.util.HashMap">
+            <String>Name</String>
+            <Property description="Name">
+              <String>Uniform Crossover</String>
+            </Property>
+          </Map>
+          <null />
+        </Configuration>
+        <List type="java.util.ArrayList" />
+        <String>freak.module.operator.crossover.common.UniformCrossover</String>
       </Node>
     </List>
     <List type="java.util.ArrayList">
